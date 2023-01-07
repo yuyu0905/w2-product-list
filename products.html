@@ -73,7 +73,7 @@
                     </div>
                   </div>
                 </div>
-                <template v-for="(imageUrl, i) in tempProduct.imagesUrl">
+                <template v-for="(imageUrl, i) in tempProduct.imagesUrl" :key="imageUrl">
                   <img :src="imageUrl" :alt=`縮圖${i+1}` class="images m-2">
                 </template>
               </template>

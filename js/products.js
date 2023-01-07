@@ -22,7 +22,6 @@ const app = {
         checkLogin() {
             axios.post(`${url}/api/user/check`)
             .then(res => {
-                console.log(res.data);
                 // 驗證成功
                 this.getProducts();
             })
